@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<!--=============================================
+FILENAME:       finalPageTest.html HTML PAGE
+AUTHOR:       ERIC PHUNG
+PURPOSE:      FINAL TEST PAGE
+CREATED:        2014.04.2014 (eS)
+MODIFIED:       2014.04.2014 (eS);
+                VALIDATED ALL HTML5 CODE;
+                VALIDATED ALL CSS CODE
+=============================================-->
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- MOBILE FIRST BOOTSTRAP META TAG | To ensure proper rendering and touch zooming -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<title>Quid Pro Quo</title>
+
+      <!-- NORMALIZER CSS LINK -->
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+				<!-- INLINE CSS AS PER REQUIRED FOR CSS RESET PRECEDENCE -->
+<style>
+
+/* BOOTSRTAP BODY BG COLOR DEFAULT */
+body {
+  background-color: #fff;
+}
+
+
+label {
+  display: inline-block;
+  width: 100px;
+  }
+legend {
+  padding: 0.5em;
+  }
+fieldset fieldset label {
+  display: block;
+  }
+#signupForm {
+  width: 670px;
+  }
+#signupForm label.error {
+  margin-left: 10px;
+  width: auto;
+  display: inline;
+  }
+</style>
+
+
+
+  
+
+
+<!-- EXTERNAL JQ VALIDATOR LINKS | INLINE JQ VALIDATOR CSS-->
+  
+  <link rel="stylesheet" media="screen" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.min.css">
+
+  
+
+<!-- INTERNET EXPLORER EXTERNAL CSS LINK -->
+<!--[if !IE]><!
+		<link rel="stylesheet" type="text/css" href="http://cs.iupui.edu/~esphung/n341/course.css" />-->
+<!--<![endif]-->
+<!--[if gte IE 7]>
+	<link rel="stylesheet" type="text/css"
+	href="http://cs.iupui.edu/~esphung/n341/coursepage_css_files/main.css" media="screen, projection" />
+<![endif]-->
+<!--[if IE 6]>
+	<link rel="stylesheet" type="text/css" href="http://universal-ie6-css.googlecode.com/files/ie6.0.3.css" media="screen, projection" />
+<![endif]-->
+
+<!-- EXTERNAL CSS LINK 
+
+		<link href="http://cs.iupui.edu/~esphung/n341/coursepage_css_files/main.css" rel="stylesheet" type="text/css">-->
+	
+
+		<!-- JAVASCRIPT AND JQUERY -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+			
+		<link href="jquery-ui.css" rel="stylesheet">
+		<script src="external/jquery/jquery.js"></script>
+		<script src="jquery-ui.js"></script>
+
+
+    <!-- JQUERY VALIDATOR PLUGIN LINKS -->
+<script src="lib/jquery.js"></script>
+<script src="dist/jquery.validate.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+
+		<!-- CUSTOM JAVASCRIPT PAGE FOR INDEX PAGE | MINIFIED AANNNDDD  OOORRIGINALLLL  =========================================================================================================================================================================================================================================================================-->
+
+      <script type="text/javascript" src="testPage.js"></script>
+
+
+
+</head>
+	<body>
+		<header class="ui-widget ui-widget-header ui-corner-all">Welcome to QUID | Quality User Interface Designs</header>
+
+
+<br>
+
+<div style="text-align: center;">
+  
+
+
+<button id="button" class="ui-state-default ui-corner-all">First time QUID Pro? Click Here.</button>
+
+</div>
+
+<!-- DISABLED ON 2014.02.12 (eS) MULTIPLE BOX SELECTION CHECKBOXES (eS) 
+<form action="radio">
+<fieldset class="ui-widget ui-widget-content ui-corner-all">
+	<legend class="ui-widget ui-widget-header ui-corner-all">CHOOSE MULTIPLE RADIOS</legend>
+
+<input type="radio" name="radioA" value="radioA">Choice A<br>
+<input type="radio" name="radioB" value="radioB">Choice B
+<br>
+<input type="radio" name="radioC" value="radioC">Choice C
+
+<br>
+
+<button type="reset">Clear</button>
+
+</fieldset>
+
+</form>
+-->
+
+
+
+
+<!-- SUBMISSION FORM FOR EXISTING USERS | "MEMBER LOGIN"================================================================================================================================ -->
+
+      <div>
+<br>
+          <form style="text-align: center;">
+        	<fieldset id="hideMe" class="ui-widget ui-widget-content ui-corner-all">
+        		<legend class="ui-widget ui-widget-header ui-corner-all">QUID Pro Login</legend>
+        		<!--<input id="autocomplete" type="text" class="label_better" data-new-placeholder="Username" placeholder="Username" >-->
+          		<input type="email" class="label_better" data-new-placeholder="Email Address" placeholder="Enter Email Address">
+          		<input type="password" class="label_better" data-new-placeholder="Password" placeholder="Enter Password">
+        <!-- SUBMIT BUTTON -->
+        		<button type="submit">Login</button>
+        <!-- RESET BUTTON -->
+      			<button type="reset">Clear</button>
+
+
+          </fieldset>
+        </form>
+      </div>
+
+
+<!-- EXCLUSIVE RADIO BUTTONS (eS) ===========================================================================================-->
+
+
+<!-- <button id="button">A button element</button> -->
+<form class="showMe" style="margin-top: 1em;display: none;text-align: center;">
+  <fieldset class="ui-widget ui-widget-content ui-corner-all">
+    <legend class="ui-widget ui-widget-header ui-corner-all">Welcome! Select your quo.</legend>
+  <div id="radioset">
+    <input type="radio" id="radio1" name="radio"><label for="radio1">Design</label>
+    <input type="radio" id="radio2" name="radio"><label for="radio2">Analysis</label>
+    <input type="radio" id="radio3" name="radio"><label for="radio3">Metrics</label>
+  </div>
+  <!-- RESET BUTTON -->
+<br>
+
+<button type="reset">I don't know or care</button>
+
+  </fieldset>
+</form>
+
+
+
+  <!-- SUBMISSION FORM FOR NEW CUSTOMERS ============================================================================= -->
+  <br>
+  <div class="showMe" style="display:none;">
+    
+    <form class="cmxform" id="signupForm" method="get" action="/login/">
+
+    	<fieldset class="ui-widget ui-widget-content ui-corner-all">
+        		<legend class="ui-widget ui-widget-header ui-corner-all" style="text-align: center;">Guest Login</legend>
+<br>
+
+      <!-- FIELD 1 | FIRST 15 CHAR =========================================== -->
+      <div>
+        <label class="required-field">First</label>
+        <input type="text" name="firstname" required id="id_1" class="form-control" placeholder="First Name" autofocus/>
+      </div>
+<br>
+      <!-- FIELD 2 | LAST 15 CHAR =========================================== -->
+      <div>
+        <label class=" required-field">Last</label>
+        <input type="text" name="lastname" required id="id_2" class="form-control" maxlength="15" placeholder="Last Name">
+      </div>
+<br>
+      <!-- FIELD 3 | STREET | 20 CHAR =========================================== -->
+      <div>
+        <label class="required-field">Street Address</label>
+        <input type="number" name="street" required id="id_3" class="form-control" placeholder="Number Address">
+      </div>
+<br>
+      <!-- FIELD 4 | STREET NAME   =========================================== -->
+      <div>
+        <label class="required-field">Street Name</label>
+        <input type="text" name="streetName" required id="id_4" class="form-control" maxlength="15" placeholder="Street Name">
+      </div>
+<br>
+      <!-- FIELD 5 | DOB | DATEPICKER =========================================== -->
+      <div>
+      	<label class="required-field">When were you born?</label>
+        <input type="date" name="dob" id="id_5" class="form-control">
+
+        
+      </div>
+<br>
+      <!-- FIELD 6 | ZIP =========================================== -->
+      <div>
+        <label class="required-field">Zip</label>
+        <input type="number" name="zip" required id="id_6" class="form-control" placeholder="Postal Code">
+      </div>
+<br>
+      <!-- FIELD 7 | EMAIL =========================================== -->
+      <div>
+        <label class="required-field">E-Mail</label>
+        <input type="email" name="input7" required id="id_7" class="form-control" maxlength="25">
+      </div>
+<br>
+      <!-- FIELD 8 | PASSWORD =========================================== -->
+      <div>
+        <label class="required-field">Password</label>
+        <input type="password" name="input8" required class="form-control" id="id_password">
+      </div>
+<br>
+        <!-- FIELD 9 | TELEPHONE NUMBER =========================================== -->
+      <div>
+        <label class=" required-field">Telephone Number</label>
+        <input type="tel" name="input9" required class="form-control" id="id_telephone" placeholder="XXXXXXXXXX">
+      </div>
+
+<br>
+      <!--SLIDER FOR OPINION 
+<h3 class="demoHeaders">Hello Slider</h3>
+<div id="slider"></div>  
+-->
+<br>
+<hr>
+
+<!-- NEW USER FORM SUBMIT/RESET BUTTONS =========================================== -->
+<br>
+      <button id="submitBtn" type="submit">Submit</button>
+<!-- RESET BUTTON -->
+      <button type="reset">Clear</button>
+
+      </fieldset>
+    </form>
+    <br>
+    <br>
+  </div>
+
+
+
+<!-- OUTPUT AREA   ================================================================================= -->
+<div class="showMe" style="display:none;">
+  				<fieldset class="ui-widget ui-widget-content ui-corner-all">
+
+					<legend class="ui-widget ui-widget-header ui-corner-all" style="text-align: center;">Check out your new profile!</legend>
+
+					<div>
+          
+            <p id="outputFirstName"></p><!-- ECHO FIRST NAME -->
+          <label><strong>Last Name</strong></label>
+            <p id="outputLastName"></p><!-- ECHO LAST NAME -->
+          <label><strong>Street Address</strong></label>
+            <p id="outputAddress"></p><!-- ECHO USER ADDRESS INPUT -->
+          <label><strong>Street Name</strong></label>
+            <p id="outputStreetName"></p><!-- ECHO USER STREET NAME INPUT -->
+          <label><strong>Birthday</strong></label>
+            <p id="outputDOB"></p><!-- ECHO USER BIRTHDAY DATE INPUT -->
+          <label><strong>Zip Code</strong></label>
+            <p id="outputZip"></p><!-- ECHO USER ZIP CODE INPUT -->
+          <label><strong>Email</strong></label>
+            <p id="outputEmail"></p><!-- ECHO USER EMAIL INPUT -->
+
+          <label><strong>Password</strong></label>
+            <p id="outputPassword"></p><!-- ECHO USER PASSWORD INPUT (HASHED) -->
+
+          <label><strong>Phone</strong></label>
+            <p id="outputPhone"></p><!-- ECHO USER PASSWORD INPUT (HASHED) -->
+
+
+          <label><strong>Game</strong></label>
+            <p id="outputRadio"></p><!-- ECHO RADIO EXCLUSIVE INPUT -->
+
+					</div>
+				</fieldset>
+
+</div>
+
+
+
+			<!-- Highlight / Error W3 VALIDATION INFO | FOOTER SECTION ===============================================================================-->
+<div class="ui-widget">
+	<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+		<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+		<strong>Hey!</strong> This page has been W3C validated.</p>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+
+
+</script>
+<br>
+	<footer>Copyright © 2014 Phung Tech</footer>
+	</body>
+</html>

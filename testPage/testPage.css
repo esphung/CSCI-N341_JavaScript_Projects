@@ -1,0 +1,39 @@
+/********************************************************a
+FILENAME:  			finalPageTest.css STYLESHEET
+AUTHOR:				ERIC PHUNG
+PURPOSE: 			CUSTOM STYLESHEET FOR FINAL TEST PAGE
+CREATED:			2014.04.2014 (eS)
+MODIFIED: 			2014.04.2014 (eS);
+
+*********************************************************/
+/******************
+CUSTOM CSS 2014.12.02 (eS)
+*******************/		
+
+
+
+
+
+/******************
+JQUERY UI CSS
+ADDED 2014.01.2014 (eS)
+*******************/
+
+body {
+	font: 62.5% "Trebuchet MS", sans-serif;
+	margin: 50px;
+	}
+.demoHeaders {
+	margin-top: 2em;
+	}
+#icons {
+	margin: 0;
+	padding: 0;
+	}
+#icons span.ui-icon {
+	float: left;
+	margin: 0 4px;
+	}
+.fakewindowcontain .ui-widget-overlay {
+	position: absolute;
+	}

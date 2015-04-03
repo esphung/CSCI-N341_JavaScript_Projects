@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--
+FILENAME:  			projectPage.html HTML FILE
+AUTHOR:				ERIC PHUNG
+PURPOSE: 			HTML FILE INDEX PAGE FOR FINAL PROJECT; CONTAINS LINKS TO FINAL PROJECT LABS
+CREATED:			2014.01.2014 (eS)
+MODIFIED: 			2014.01.2014 (eS);
+					TESTED IN OPERA, CHROME, FIREFOX, SAFARI
+					W3 VALIDATED
+					ADDED FIRST FOUR LABS AS LINKS IN LIST ON THIS PAGE (PROJECT PAGE)
+					Accordion ADDED ON 2014.12.02 (eS)
+-->
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Project Page | Eric Phung</title>
+				<!-- INLINE CSS AS PER REQUIRED FOR RESET PRECEDENCE -->
+		<style>
+		body {
+		font: 62.5% "Trebuchet MS", sans-serif;
+		margin: 50px;
+		}
+		.demoHeaders {
+		margin-top: 2em;
+		}
+		#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+		}
+		#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+		}
+		#icons {
+		margin: 0;
+		padding: 0;
+		}
+		#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+		}
+		#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+		}
+		.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+		}
+		select {
+		width: 200px;
+		}
+		</style>
+
+
+<!-- INTERNET EXPLORER EXTERNAL CSS LINK -->
+<!--[if !IE]><!-->
+		<link rel="stylesheet" type="text/css" href="http://cs.iupui.edu/~esphung/n341/course.css" />
+<!--<![endif]-->
+<!--[if gte IE 7]>
+	<link rel="stylesheet" type="text/css"
+	href="http://cs.iupui.edu/~esphung/n341/coursepage_css_files/main.css" media="screen, projection" />
+<![endif]-->
+<!--[if IE 6]>
+	<link rel="stylesheet" type="text/css" href="http://universal-ie6-css.googlecode.com/files/ie6.0.3.css" media="screen, projection" />
+<![endif]-->
+
+<!-- EXTERNAL CSS LINK -->
+
+		<link href="http://cs.iupui.edu/~esphung/n341/coursepage_css_files/main.css" rel="stylesheet" type="text/css">
+	
+<!-- JAVASCRIPT AND JQUERY -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+			
+		<link href="jquery-ui.css" rel="stylesheet">
+		<script src="external/jquery/jquery.js"></script>
+		<script src="jquery-ui.js"></script>
+					<!-- CUSTOM JAVASCRIPT PAGE FOR INDEX PAGE -->
+		<script type="text/javascript" src="projectPage.js"></script>
+
+
+	</head>
+	<body>
+		<header>Under construction..</header>
+		<h1 class="demoHeaders">Project Page | Coming soon</h1>
+		<h3 class="demoHeaders">Eric Phung</h3>
+
+
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	
+
+			<h2 class="demoHeaders">Links to Labs</h2>
+			
+			<ul>
+			    <li><a href="../pullThroughLab/pullThroughLab.html" >Pull Through Lab</a></li>
+			    <li><a href="../funcSpecLab/funcSpec.html">Functional Specification Lab</a></li>
+			    <li><a href="../formPrototypeLab/formPrototypeLab.html">Form Prototype Lab</a></li>
+			    <li><a href="../clientSideValidation/clientSideValidation.html">Client-side Validation</a></li>
+			    <li><a href="../testPage/testResultsPage.html">Test Results Page</a></li>
+			</ul>
+
+		<!-- Accordion ADDED ON 2014.12.02 (eS)-->
+<h2 class="demoHeaders">Accordion</h2>
+<div id="accordion">
+	<h3>First</h3>
+	<div>
+		<h2>Apple iPhone</h2>
+ 			<img src="http://imgur.com/kv11CUa.png" alt="iPhone5sScreenShot"></div>
+
+
+	<h3>Second</h3>
+	<div>Phasellus mattis tincidunt nibh.</div>
+	<h3>Third</h3>
+	<div>Nam dui erat, auctor a, dignissim quis.</div>
+</div>
+
+
+			<!-- Highlight / Error W3 VALIDATION INFO -->
+<div class="ui-widget">
+	<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+		<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+		<strong>Hey!</strong> This page passed a W3 Validation</p>
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+
+
+      
+      var availableTags = [
+      	"ActionScript",
+      	"AppleScript",
+      	"Asp",
+      	"BASIC",
+      	"C",
+      	"C++",
+      	"Clojure",
+      	"COBOL",
+      	"ColdFusion",
+      	"Erlang",
+      	"Fortran",
+      	"Groovy",
+      	"Haskell",
+      	"Java",
+      	"JavaScript",
+      	"Lisp",
+      	"Perl",
+      	"PHP",
+      	"Python",
+      	"Ruby",
+      	"Scala",
+      	"Scheme"
+      ];
+      $("#autocomplete").autocomplete({
+      	source: availableTags
+      });
+      $("#button").button();
+      $("#radioset").buttonset();
+      $("#tabs").tabs();
+      $("#dialog").dialog({
+      	autoOpen: false,
+      	width: 400,
+      	buttons: [{
+      		text: "Ok",
+      		click: function() {
+      			$(this).dialog("close");
+      		}
+      	}, {
+      		text: "Cancel",
+      		click: function() {
+      			$(this).dialog("close");
+      		}
+      	}]
+      });
+      // Link to open the dialog
+      $("#dialog-link").click(function(event) {
+      	$("#dialog").dialog("open");
+      	event.preventDefault();
+      });
+      $("#datepicker").datepicker({
+      	inline: true
+      });
+      $("#slider").slider({
+      	range: true,
+      	values: [17, 67]
+      });
+      $("#progressbar").progressbar({
+      	value: 20
+      });
+      $("#spinner").spinner();
+      $("#menu").menu();
+      $("#tooltip").tooltip();
+      $("#selectmenu").selectmenu();
+      // Hover states on the static widgets
+      $("#dialog-link, #icons li").hover(
+      	function() {
+      		$(this).addClass("ui-state-hover");
+      	},
+      	function() {
+      		$(this).removeClass("ui-state-hover");
+      	}
+      );
+    </script>
+
+	<footer><!--Eric Phung | Computer Science--></footer>
+	</body>
+</html>

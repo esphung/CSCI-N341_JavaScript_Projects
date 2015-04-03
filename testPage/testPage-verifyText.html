@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8000" />
+<title>testPage-verifyText</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">testPage-verifyText</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>file:///Users/80GB/Desktop/testPage/testPage.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Quid Pro Quo</td>
+	<td></td>
+</tr>
+<!--//VERIFY RETURN CUSTOMER LOGIN-->
+<tr>
+	<td>assertText</td>
+	<td>//header</td>
+	<td>Welcome to QUID | Quality User Interface Designs</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=#button</td>
+	<td>exact:First time QUID Pro? Click Here.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//fieldset[@id='hideMe']/legend</td>
+	<td>QUID Pro Login</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=input.label_better</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//button[@type='reset']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//input[@type='password']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#hideMe</td>
+	<td></td>
+</tr>
+<!--//VERIY INVALID CREDENTIALS-->
+<tr>
+	<td>type</td>
+	<td>css=input.label_better</td>
+	<td>baduser</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='password']</td>
+	<td>badpaawoerd</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='reset']</td>
+	<td></td>
+</tr>
+<!--//VERIFY VALID CREDENTIALS-->
+<tr>
+	<td>type</td>
+	<td>css=input.label_better</td>
+	<td>validuser@validemail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='password']</td>
+	<td>kjsadffdhsak</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Quid Pro Quo</td>
+	<td></td>
+</tr>
+<!--//VERIFY RADIO SET-->
+<tr>
+	<td>open</td>
+	<td>file:///Users/80GB/Desktop/testPage/testPage.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Quid Pro Quo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#button</td>
+	<td>exact:First time QUID Pro? Click Here.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='radioset']/label/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='radioset']/label[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='radioset']/label[3]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='reset'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='radioset']/label/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#radio1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='radioset']/label[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#radio2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='radioset']/label[3]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#radio3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='reset'])[2]</td>
+	<td></td>
+</tr>
+<!--//VERIFY FORM-->
+<tr>
+	<td>assertText</td>
+	<td>//form[@id='signupForm']/fieldset/legend</td>
+	<td>Guest Login</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#id_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#id_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#id_3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#id_4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#id_5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=#id_6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#id_7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#id_password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#id_telephone</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#submitBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='reset'])[3]</td>
+	<td></td>
+</tr>
+<!--//VERIFY FORM ENTRY VALIDATION-->
+<tr>
+	<td>type</td>
+	<td>css=#id_1</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#submitBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-tooltip-content</td>
+	<td>This field is required.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#id_2</td>
+	<td>doe</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#submitBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#id_3</td>
+	<td>1234</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#submitBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#id_4</td>
+	<td>nancy</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#submitBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-tooltip-content</td>
+	<td>This field is required.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#id_5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.ui-state-default.ui-state-hover</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#id_6</td>
+	<td>55555</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#submitBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-tooltip-content</td>
+	<td>This field is required.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#id_7</td>
+	<td>kajfdlks</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#submitBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#id_7</td>
+	<td>kajfdlks@kjasfdklj</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#submitBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#id_password</td>
+	<td>lksadjflkdajs</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#submitBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ui-tooltip-content</td>
+	<td>This field is required.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#id_telephone</td>
+	<td>5555555555</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#submitBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#submitBtn</td>
+	<td>Submit</td>
+</tr>
+<!--//VERIFY RESET BUTTON-->
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='reset'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>css=#id_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>css=#id_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>css=#id_3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>css=#id_4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>css=#id_5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>css=#id_6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>css=#id_7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>css=#id_password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>css=#id_telephone</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

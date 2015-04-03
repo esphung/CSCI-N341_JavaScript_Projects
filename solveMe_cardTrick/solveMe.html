@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+    Filename:  
+    Written by: Eric Scott Phung (ESP)
+    Purpose: 
+    Created on 09.06.2014
+    Last Modified: 
+    	Uploaded file to server on 09.15.2014 
+-->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Solve Me | Card Trick</title>
+<!--[if !IE]><!-->
+	<link rel="stylesheet" type="text/css" href="http://cs.iupui.edu/~esphung/n341/coursepage_css_files/main.css" />
+<!--<![endif]-->
+<!--[if gte IE 7]>
+	<link rel="stylesheet" type="text/css"
+	href="http://cs.iupui.edu/~esphung/n341/coursepage_css_files/main.css" media="screen, projection" />
+<![endif]-->
+<!--[if IE 6]>
+	<link rel="stylesheet" type="text/css" href="http://universal-ie6-css.googlecode.com/files/ie6.0.3.css" media="screen, projection" />
+<![endif]-->
+	<link href="http://cs.iupui.edu/~esphung/n341/coursepage_css_files/main.css" rel="stylesheet" type="text/css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<!-- N/A
+	<script type="text/javascript" src="javascript.js"></script>
+-->
+</head>
+<body>
+<header><!--Eric Phung | Computer Science--></header>
+<div id="body">
+
+	<h1>Task: Card Magic Trick</h1>
+		<hr>
+			<p>1.Show user 9x playing cards face up and say "Pick your favorite card without telling me what it is. When you are ready click Yes and I will find which card you are thinking of".</p>
+			<p>*Prompt user to click Yes or No ("Are you ready?")</p>
+
+			<p>*If Yes proceed to step 1a. </p>
+
+
+			<p>1a.Shuffle 9x standard playing cards.</p>
+			
+			<p>*Arrange playing cards face down in 3 x 3 grid on Table.  Label horizontally as three different rows (Row A, Row B, and Row C(respectively from top to bottom).  Hide labels from user.</p>
+
+			<p>1b.Show the user Row A cards face up and prompt Yes or No ("Do you see your card?)</p>
+			<p>* If Yes proceed to step 10a.</p>
+			<p>* If No proceed to step 20a.</p>
+
+			<hr>
+
+			<p>10a. Shuffle cards that did not contain the users card into new Row A, Row B, and Row C and be sure to begin each new row with the individual cards from the row in which the user selected Yes and was led to this step. The new rows are now labeled Rows D, E, and F.  The other 6x cards in these rows should be completely random.</p>
+			<p>10b. Display  Row D face up to user and prompt Yes or No ("Do you see your card?")</p>
+			<p>* If Yes.  Show user first card in current Row and say "This is your card!"</p>
+			<p>* If No, repeat step 10b. with Row E, then Row F until user selects Yes at the prompt and then display the first card in current row and say "This is your card!"</p>
+
+			<hr>
+
+			<p>20a. Shuffle Row A cards and set aside.  Display Row B face up for user to see and prompt Yes or No ("Do you see your card?")</p>
+			<p>* If Yes proceed to step 10a.</p>
+			<p>* If No proceed to step 30a.</p>
+
+			<hr>
+
+			<p>30a. Discard Row B into the pile with Row A and immediately move on to step 10a.</p>
+
+			<hr>
+
+</div>
+<footer><!--Eric Phung | Computer Science--></footer>
+</body>
+</html>

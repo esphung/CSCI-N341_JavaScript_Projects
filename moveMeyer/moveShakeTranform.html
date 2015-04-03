@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+FILENAME:			MOVERS AND SHAKERS LAB | N341
+AUTHOR:				ERIC SCOTT PHUNG (eS)
+PURPOSE: 			DEMONSTRATE A MOVABLE IMAGE
+    Utilize strict compliant XHTML host file (or HTML5)
+    Utilize google hosted jQuery library
+    Utilize three-tiered web page
+    Construct a range of JQuery selector instructions, from simple to compound
+    Utilize jQuery filters to refine selection choices
+    Utilize general expression pattern matching as required on element attributes as selection criteria
+    Manipulate the DOM with jQuery
+    Manipulate CSS with jQuery
+    Manipulate HTML with jQuery
+    Create visual effects with Show, Hide, Toggle, Fade
+    Create movement effects with slide and animate
+
+CREATED:            11.05.2014: PAGE CREATED (eS)
+MODIFIED:           11.05.2014: PAGE CREATED (eS)
+                                ADDED BOOTSTRAP (eS)
+                    11.06.2014:; (eS)
+                    ADDED JQUERY HANDLES (eS)
+                    ADDED FX BUTTONS (eS)
+
+-->
+
+
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>Movers and Shakers | Eric Phung</title>
+
+		<!-- CSS SHEETS -->
+		<link href="swagsheet.css" rel="stylesheet" />
+		<link href="moveShakeTransform.css" rel="stylesheet" />
+
+		<!-- ADDED 11.06.2014 (eS) JQUERY HANDLES -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript" src="moveShakeTranform.js"></script>
+
+	</head>
+	
+	<body>
+		<header id="header" class="headlines">N341 | Movers and Shakers Lab</header><!-- /header -->
+
+
+
+	<!-- ERWIN FLIP MODE
+		<h1>MOUSE OVER ERLENMEYER TO SEE HOW EXCITED HE IS ABOUT HIS FLASKS</h1>
+
+		<div class="container">
+			<div class="iphone-front"></div>
+			<div class="iphone-back"></div>
+		</div>
+
+	-->
+
+		<div class="erwinDiv">
+			<img class="erwinDiv" src="ErwinSchrodinger_001.png" alt="Image missing t(^^t)">
+
+
+				<div class="fxButtons">
+					
+					<h1>FX BUTTONS</h1>
+					<button type="button" id="hideButton">HIDE ME</button>
+					<button type="button" id="showButton">SHOW ME</button>
+					<button type="button" id="toggleButton">TOGGLE ME</button>
+					<button type="button" id="slideDownButton">SLIDE ME DOWN</button>
+					<button type="button" id="slideUpButton">SLIDE ME UP</button>
+					<button type="button" id="fadeInButton">FADE ME IN</button>
+					<button type="button" id="fadeOutButton">FADE ME OUT</button>
+
+
+
+
+				</div>
+
+
+		</div>
+
+		<footer>Eric Phung | 2014™
+        </footer>
+
+	</body>
+</html>

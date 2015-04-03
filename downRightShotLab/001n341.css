@@ -1,0 +1,16 @@
+/************
+FILENAME:    			DOWN RIGHT SHOT | JQUERY LAB | CSS PAGE
+AUTHOR:    				ERIC SCOTT PHUNG (eS)
+PURPOSE:   				Create a Keyboard event trigger.
+						Create a Mouse event trigger.
+						Reinforce key jQuery event syntax. 
+CREATED:   				11.03.2014 (eS)
+MODIFIED: 				11.03.2014 (eS)
+*********/
+
+#boxChange {
+	background-color: black;
+	color: white;
+	margin: 20px;
+	padding: 20px;
+}

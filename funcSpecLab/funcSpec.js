@@ -1,0 +1,15 @@
+/******************
+FILENAME:  			funcSpec.js JAVASCRIPT FILE
+AUTHOR:				ERIC PHUNG
+PURPOSE: 			APPLY CUSTOM JAVASCRIPT TO FUNCTIONAL SPECIFICATION HTML PAGE/FILE
+CREATED:			2014.01.2014 (eS)
+MODIFIED: 			2014.01.2014 (eS);
+					TESTED IN OPERA, CHROME, FIREFOX, SAFARI
+					W3 VALIDATED
+*******************/
+
+$(document).ready(function() {
+	//alert("aSome")//DEBUG ALERT
+
+	
+});

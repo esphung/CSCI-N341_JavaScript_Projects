@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<!--
+TITLE: Course Page
+AUTHOR: Eric Scott Phung
+PURPOSE: Class Index Page to Host Lab Work for N341
+NOTE: Based on template provided by instructor
+ORIGINALLY CREATED ON: 01/09/2013
+LAST MODIFIED ON: 10.02.2014:
+LAST MODIFIED BY: Eric Scott Phung
+MODIFICATION HISTORY:
+01/09/2013: Create date
+07/04/2013: Created link for hello world program
+08/29/2014: Modified "AUTHOR"
+08/31/2014: Created link for Google+
+			Created link to Email author
+			Created link for N341 Course Page
+			Created link for W3 Validator
+09.04.2014: Changed Cyberduck link >>> i300 Class Page*
+09.08.2014: Added link to pirateAlert page
+09.12.2014: Added Prompt, Multiwrite, COnversion pages (ESP)
+09.25.2014:	Added link to elif001 page (ESP)
+			Added link to elif002 page (ESP)
+10.01.2014: Uploaded new "functions.html" link (ESP)
+			Added link to array.html (ESP)
+10.02.2014:	CHANGED "array.html" link to direct "array_002.html"; (ESP)
+			ADDED "GRADED" TO CONTENT ALREADY COMPLETED AND ENTERed; (ESP)
+			ADDED: LINK TO "stringShipNames_001.html"; (ESP)
+10.22.2014: ADDED JQUERY ALLO WORLD LINK (ESP)
+10.24.2014:	UPLOADED (NEW) JQUERY ALL WORLD HTML/ SAME LINK (ESP)
+10.27.2014:	TABBED DOCUMENT ELEMENTS TO REPRESENT PROPER DOM TREE; ADDED TRIGGERED JQUERY EVENT LAB (ESP)
+11.06.2014 ADDED TWITTER BOOTSTRAP (eS)
+			ADDED MOVERS AND SHAKERS LAB (eS)
+			ADDED FONT AWESOME CSS (eS)
+11.20.2014 ADDED FUNCTIONAL SPEC LINK (eS)
+12.01.2014:	REMOVED OLD PULL THROUGH LAB LINK FROM COURSE PAGE; REPLACED FINAL PROJECT INDEX PAGE WITH NEW VERSION; CREATED AND LINKED NEW PULL THROUGH LAB DELIVERABLE
+
+-->
+
+
+
+<html>
+
+
+<!-- HEAD/META SECTION =========================================================== -->
+
+	<head>
+
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+
+		<title>N341 Course Page | Eric Phung</title>
+
+
+
+
+<!-- INLINE CSS  (TEMPORARY)   =========================================================== -->
+
+
+
+		<style>
+			*{
+		margin:0 0 3px;;
+	}
+			header{
+		text-align:center;
+		color:white;
+		background-color:#134;
+		padding:30px 150px;
+	}
+			h1{
+		text-align: center;
+		color:white;
+		background-color:#134;
+	}
+			p{
+		text-align: center;
+		background-color:#134;
+	}
+			table, th, td {
+		border: 1px white;
+		border-collapse: collapse;
+	}
+			th, td {
+		padding: 10px 42px;
+	}
+
+			body {
+		background-color: #CCE0DF;
+	}
+			body p {
+		padding-left: 2em;
+	}
+			li, li a{
+		list-style: none;
+		background-color: #43ABA4;
+		text-align: center;
+		color: white;
+		border-radius: 13px 40px;
+		padding: 35px;
+	}
+
+			h2{
+		width: 100%;
+		color: #1E6E68;
+		line-height: 40px;
+	}
+			h3{
+		color: #1E6E68;
+		line-height: 30px;
+		text-align: center;
+	}
+
+			#assignments{
+		width: 720px;
+		margin: 0 auto;
+		box-shadow: 0 2px 15px #EEE;
+		min-height: 300px;
+		padding: 15px;
+		border-radius: 10px;
+		background-color: white;
+	}
+			#assignments ul{
+		float:left;
+		width: 300px;
+	}
+			hr{
+		margin: 10px 0;
+		width: 100%;
+		size: 600;
+		float: left;
+	}
+
+
+		</style>
+
+
+
+
+
+
+
+
+
+
+
+<!-- CASCADING STYLE SHEETS    =========================================================== -->
+
+<link rel="stylesheet" type="text/css" href="bootstrap-theme.css">
+<link rel="stylesheet" type="text/css" href="bootstrap-theme.css.map">
+<link rel="stylesheet" type="text/css" href="bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.css.map">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+
+<link href="normalize.css" rel="stylesheet">
+
+
+
+
+
+<!-- ADDED TWITTER BOOTSTRAP 11.06.2014 (eS)-->
+		<!-- BOOTSTRAP CDN -->
+		<!-- Latest compiled and minified CSS -->
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+
+
+
+<!-- ADDED FONT AWESOME LIBRARIES 11.06.2014 (eS)-->
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+
+
+
+
+
+<!-- BOOSTRAP JS -->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+
+
+
+<!-- FONT-AWESOME CSS ICON STYLING
+		<link rel="stylesheet" href="homeFontSwagg.css">
+-->
+
+
+
+
+<!-- INLINE JAVASCRIPT =========================================================== -->
+
+
+	<!-- Added write(date()) script on 10.01.2014 -->
+			<script type="text/javascript">document.write(Date());</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</head>
+
+
+
+
+
+
+<!-- PAGE BODY  =========================================================== -->
+
+	<body>
+
+		<header></header>
+
+
+
+
+
+
+
+<!-- FLOATING NAVIGATION BAR (BOOTSTRAP) =========================================================== -->
+
+
+<!-- Wrap all page content here -->
+<div id="wrap">
+
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+
+
+<!-- ADDED DROPDOWN MOBILE MENU 11.07.2014 (eS)
+			<ul>
+			  <li><a href="default.asp">Home</a></li>
+			  <li><a href="news.asp">News</a></li>
+			  <li><a href="contact.asp">Contact</a></li>
+			  <li><a href="about.asp">About</a></li>
+			</ul>
+
+-->
+
+
+          <span class="icon-bar"></span>
+
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+
+
+        </button>
+        <a class="navbar-brand" href="#">Course Page | Eric Scott Phung</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">exercitation ullamco</a></li>
+
+          <li class="container-fluid"><a href="http://validator.w3.org/check?uri=http%3A%2F%2Fcs.iupui.edu%2F~esphung%2Fn341%2Findex.html" title="W3 VALIDATOR COMPLIANT">W3 Index Confirmation</a></li>
+          <li class="container-fluid"><a href="#contact">consectetur adipisicing</a></li>
+          <li class="container-fluid">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">BACK TO TOP<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">culpa</a></li>
+              <li><a href="#">Aproident</a></li>
+              <li><a href="#">officia deserunt</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">consectetur lorem</li>
+              <li><a href="#">in culpa</a></li>
+              <li><a href="#">consectetur</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<!-- LINKS TO COURSE WORK AND ASSIGNMENTS =========================================================== -->
+
+
+  <!-- Begin page content -->
+  <div class="container-fluid">
+    <div class="page-header"></div><!-- COVERED BY FLOATING NAV BAR -->
+
+  </div>
+</div>
+	<div class="container-fluid">
+		<div class="container-fluid">
+			<ul >
+				<li>
+					<a
+					href="http://cs.iupui.edu/~esphung/n341/testFile_files/testFile.html" target=_blank> n341 Test File </a>
+				</li>
+
+	<!-- Added Pirate Alert on 09.08.2014-->
+				<li>
+					<a
+					href="http://cs.iupui.edu/~esphung/n341/pirateAlert/pirateAlert.html" target=_blank> External Alert | Pirate Alert //GRADED </a>
+				</li>
+	<!-- Added "MultiWrite | New Pirate Page" link and page on 09.12.2014-->
+				<li>
+					<a
+					href="http://cs.iupui.edu/~esphung/n341/Multiwrite/multiWrite.html"
+					target=_blank> MultiWrite | New Pirate Page //GRADED </a>
+				</li>
+
+				<li>
+					<a
+					href="http://cs.iupui.edu/~esphung/n341/Prompt/prompt.html"
+					target=_blank> Prompt | Pirate Contract //GRADED </a>
+				</li>
+
+	<!-- Added Conversions link on 09.11.2014 -->
+				<li>
+					<a href="http://cs.iupui.edu/~esphung/n341/Conversions/conversion.html" target=_blank> Conversions | Pirate Networth //GRADED </a>
+				</li>
+				<li>
+	<!-- Added Task link on 09.15.2014 -->
+					<a href="http://cs.iupui.edu/~esphung/n341/solveMe_cardTrick/solveMe.html" target=_blank> Task | Card Trick </a>
+				</li>
+				<li>
+	<!-- Added Functions link on 10.01.2014 -->
+					<a href="http://cs.iupui.edu/~esphung/n341/functions_files/functions.html" target=_blank> Functions | Pirate Ship Battle </a>
+				</li>
+	<!-- ADDED BREAK HERE | 2x SEPERATE UNORDERED LISTS -->
+			</ul>
+			<ul>
+				<li>
+	<!-- Added "randomness.html" link on 09.19.2014 -->
+					<a href="http://cs.iupui.edu/~esphung/n341/randomness_files/randomness.html" target=_blank> Randomness | Dice Throws //GRADED </a>
+				</li>
+				<li>
+	<!-- Added "iffey001.html" link on 09.24.2014 -->
+					<a href="http://cs.iupui.edu/~esphung/n341/iffey001_files/iffey001.html" target=_blank> If Conditional | Arrival Time </a></li>
+			</ul>
+		</div><!-- end div id="assignments" -->
+
+	<!-- Added second div id"assignmentsNew" on 10.01.2014 -->
+		<div class="container-fluid">
+			<ul>
+				<li>
+	<!-- Added "elif_001.html" link on 09.25.2014 -->
+					<a href="http://cs.iupui.edu/~esphung/n341/elif_001_files/elif_001.html" target=_blank> Case Switches | A, B, C,... </a>
+				</li>
+				<li>
+					<a href="http://cs.iupui.edu/~esphung/n341/elif_002_files/elif_002.html" target=_blank> Looping : Branching | Coordinates </a>
+				</li>
+				<li>
+					<a href="http://cs.iupui.edu/~esphung/n341/switches_002_files/switch_002.html" target=_blank> Case Switches | Coordinates </a>
+				</li>
+				<li><!--Added "array.html" link on 10.01.2014 -->
+					<a href="http://cs.iupui.edu/~esphung/n341/array_files/array_002.html" target=_blank> Arrays | Code for Pirates </a>
+				</li>
+				<li><!-- Added "stringShipNames.html on 10.02.2014 -->
+					<a href="http://cs.iupui.edu/~esphung/n341/stringShipNames_files/stringShipNames_001.html" target=_blank> Strings | Ship Names </a>
+				</li>
+				<li>
+					<a href="http://cs.iupui.edu/~esphung/n341/buttonBoyFiles/buttonBoys.html" target=_blank> Buttons | Button Boy </a>
+				</li>
+	<!--ADDED 10.24.2014 JQUERY ALLO WORLD-->
+				<li>
+					<a href="http://cs.iupui.edu/~esphung/n341/practiceAllojQuery/allojQuery001.html" target=_blank> jQuery | Pick Me Lab </a>
+				</li>
+	<!-- ADDED FILTERED PICK LAB ON 10.24.2014-->
+				<li>
+					<a href="http://cs.iupui.edu/~esphung/n341/filterSelect_files/filterSelect001.html" target=_blank> jQuery | The Filtered Pick </a>
+				</li>
+	<!-- ADDED TRIGGERED LAB JQUERY -->
+				<li>
+					<a href="http://cs.iupui.edu/~esphung/n341/triggerEvent/triggerEvent.html" target=_blank> jQuery | Triggered </a>
+				</li>
+				<li>
+					<a href="http://cs.iupui.edu/~esphung/n341/firstjQuery_files/jQueryHelloWorld001.html" target=_blank> jQuery | Allo World </a>
+				</li>
+				<li>
+					<a href="http://cs.iupui.edu/~esphung/n341/downRightShotLab/001n341.html" target=_blank> jQuery | Down Right Shot </a>
+				</li>
+				<li>
+					<a href="http://cs.iupui.edu/~esphung/n341/darkHiveInYoFaceLab/darkHive001.html" target=_blank> jQuery | IN YO FACE LAB</a>
+				</li>
+				<li>
+					<a href="http://cs.iupui.edu/~esphung/n341/moveMeyer/moveShakeTranform001.html" target=_blank> jQuery | MOVERS AND SHAKERS LAB</a>
+				</li>
+
+
+				<li>
+					<a href="http://cs.iupui.edu/~esphung/n341/projectPage/projectPage.html" target=_blank> PRODUCT RELEASE (VERSION 1.0.0)</a>
+				</li>
+
+
+
+
+
+			</ul>
+
+
+
+
+<!-- RANDOM BUTTON =========================================================== -->
+<!-- ADDED 11.06.2014 (eS) -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  HELLO BUTTON</button>
+
+
+
+
+
+<!-- MODAL
+=========================================================== -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+              </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+		</div>
+	</div>
+
+
+
+
+
+<!-- PAGE FOOTER    =========================================================== -->
+
+<div id="footer">
+	<footer>Eric Phung | 2014™</footer>
+</div>
+
+
+
+
+
+</body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57872995-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	</html>
